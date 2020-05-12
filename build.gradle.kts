@@ -40,6 +40,11 @@ dependencies {
 
     implementation(kotlin("stdlib-jdk8"))
     implementation("args4j:args4j:2.33")
+    implementation("io.openvidu:openvidu-java-client:2.13.0")
+
+    val scribeVersion = "6.9.0"
+    implementation("com.github.scribejava:scribejava-apis:$scribeVersion")
+    implementation("com.github.scribejava:scribejava-core:$scribeVersion")
 
     val log4jVersion = "2.13.2"
     implementation("org.apache.logging.log4j:log4j-core:$log4jVersion")
@@ -54,7 +59,7 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-gson:$fuelVersion")
 
-    implementation("com.auth0:java-jwt:3.8.1")
+    implementation("com.auth0:java-jwt:3.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.6")
     implementation("commons-codec:commons-codec:1.12")
     implementation("com.fatboyindustrial.gson-javatime-serialisers:gson-javatime-serialisers:1.1.1")
